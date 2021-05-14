@@ -5,4 +5,4 @@ class Herd:
 
 
     def move_to_heard(self, dinos):
-        self.dinos.append(self, dinos)
+        self.dinos.append(dinos)

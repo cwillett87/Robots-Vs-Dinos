@@ -3,6 +3,7 @@ from robot import Robot
 from dinosaur import Dinosaur
 from fleet import Fleet
 from herd import Herd
+from battlefield import Battlefield
 
 
 if __name__ == '__main__':
@@ -23,4 +24,4 @@ if __name__ == '__main__':
     herd.move_to_heard(dino_1)
     herd.move_to_heard(dino_2)
     herd.move_to_heard(dino_3)
-    
+    battle_1 = Battlefield(fleet,herd)
