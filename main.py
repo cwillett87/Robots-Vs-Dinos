@@ -1,6 +1,7 @@
 from weapon import Weapon
 from robot import Robot
 from dinosaur import Dinosaur
+from fleet import Fleet
 
 
 if __name__ == '__main__':
@@ -13,3 +14,8 @@ if __name__ == '__main__':
     dino_1 = Dinosaur('T-rex', 40)
     dino_2 = Dinosaur('Raptor', 25)
     dino_3 = Dinosaur('Terradactle', 35)
+    fleet = Fleet()
+    fleet.put_in_fleet(robot_1)
+    fleet.put_in_fleet(robot_2)
+    fleet.put_in_fleet(robot_3)
+    print(fleet)

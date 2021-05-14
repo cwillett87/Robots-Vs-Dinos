@@ -3,4 +3,6 @@ class Fleet:
     def __init__(self):
         self.robots = []
 
-    def create_fleet(self):
+    def put_in_fleet(self, robots):
+        self.robots.append(robots)
+
