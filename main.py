@@ -24,4 +24,7 @@ if __name__ == '__main__':
     herd.move_to_heard(dino_1)
     herd.move_to_heard(dino_2)
     herd.move_to_heard(dino_3)
-    battle_1 = Battlefield(fleet,herd)
+    battle_1 = Battlefield(fleet, herd)
+    robot_1.attack_dino(dino_1)
+    dino_1.attack_robot(robot_1)
+    print(dino_1)
