@@ -7,5 +7,6 @@ class Robot:
         self.weapon = Weapon
 
     def attack_dino(self,dinosaur):
-        dinosaur.health -= self.weapon.attack_power
-        self.power_level -= 15
+        if self.health > 0 and self.power_level >= 15:
+            dinosaur.health -= self.weapon.attack_power
+            self.power_level -= 15
